@@ -68,19 +68,19 @@ ol {
   display: flex;
   align-items: flex-end;
   gap: 30px;
-  inline-size: 1140px;
+  inline-size: 1150px;
 }
 
 .result {
   flex-shrink: 0;
-  inline-size: 710px;
+  inline-size: 720px;
 }
 
 .result__video-container {
   position: relative;
-  inline-size: 710px;
+  inline-size: 720px;
   block-size: 385px;
-  margin-block-end: 28px;
+  margin-block-end: 20px;
 }
 
 .result__video {
@@ -127,7 +127,7 @@ ol {
 }
 
 .search-form__textfield {
-  inline-size: 222px;
+  inline-size: 225px;
   padding: 4px 0;
   border: 0;
   border-block: 1px solid #fff;
@@ -137,10 +137,6 @@ ol {
   line-height: 1.2;
   background-color: #1b1919;
   appearance: none;
-}
-
-.search-form__textfield:focus {
-  outline: none;
 }
 
 .search-form__textfield::placeholder {
@@ -186,11 +182,15 @@ ol {
   text-decoration: underline;
 }
 
-.button:active {
+.button:active,
+.content__card-link:active,
+.content__card-link_current {
   background-color: #565251;
 }
 
-.button:focus {
+.button:focus,
+.search-form__textfield:focus,
+.content__card-link:focus {
   outline: none;
 }
 
@@ -201,15 +201,14 @@ ol {
 
 .search-form__submit-button {
   align-self: flex-end;
-  inline-size: 195px;
-  block-size: 36px;
+  inline-size: 198px;
+  block-size: 34px;
 }
 
 .more-button {
   inline-size: 100%;
-  block-size: 28px;
+  block-size: 34px;
   flex-shrink: 0;
-  font-size: 14px;
 }
 
 /* Правая колонка */
@@ -230,14 +229,14 @@ ol {
 }
 
 .content__accent {
-  color: #565251;
+  color: #545050;
 }
 
 .content__list-container {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 32px;
   block-size: 300px;
   overflow-y: auto;
 }
@@ -245,7 +244,7 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 32px;
 }
 
 .content__list-item {
@@ -259,20 +258,8 @@ ol {
   cursor: pointer;
 }
 
-.content__card-link_current {
-  background-color: #565251;
-}
-
-.content__card-link:active {
-  background-color: #565251;
-}
-
 .content__card-link:hover {
   text-decoration: underline;
-}
-
-.content__card-link:focus {
-  outline: none;
 }
 
 .content__card-link:focus-visible {
@@ -293,9 +280,9 @@ ol {
 .content__video-card-title {
   overflow: hidden;
   font-family: 'Oswald', 'Impact', sans-serif;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -304,8 +291,8 @@ ol {
 .content__video-card-description {
   display: -webkit-box;
   overflow: hidden;
-  font-size: 14px;
-  line-height: 1.1;
+  font-size: 18px;
+  line-height: 1.05;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
@@ -313,8 +300,8 @@ ol {
 
 .content__video-card-thumbnail {
   flex-shrink: 0;
-  min-inline-size: 190px;
-  block-size: 100px;
+  min-inline-size: 200px;
+  block-size: 104px;
   object-fit: cover;
   object-position: center;
 }
